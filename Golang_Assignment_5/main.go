@@ -14,7 +14,7 @@ func postHomePage(c *gin.Context) {
 		fmt.Println(err.Error())
 	}
 	c.JSON(200, gin.H{
-		"message": string(value), // Register Number
+		"message": string(value), // Register No
 	})
 }
 func homePage(c *gin.Context) {
