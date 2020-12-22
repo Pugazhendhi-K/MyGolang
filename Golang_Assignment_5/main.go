@@ -46,4 +46,8 @@ func main() {
 	r.POST("/", postHomePage)
 	r.GET("/query", QueryStrings)
 	r.GET("/path/:name/:age", PathParameters)
+
+	fmt.Printf("Starting server at port 8084\n")
+	if err := http.ListenAndServe(":8084", nil); err != nil {
+		log.Fatal(err)
 }
